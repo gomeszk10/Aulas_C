@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <locale.h>
+#include <math.h>
 
 // tipo de partida 
 int main()
@@ -9,23 +10,17 @@ int main()
     // língua desejada
     setlocale(LC_ALL, "Portuguese_Brazil");
 
-    char imposto,novosalario, classificacao,opcao,opcao1,opcao2,opcao3;
+    char imposto,novosalario, classificacao,opcao;
     float salario,imp5,imp10,imp15,novosal;
 
     int i = 0;
 
-    printf("2Carregando");
+    printf("Carregando");
     while (i++ < 5)
     {
-        Sleep(230); // Sleep 1 segundo
+        Sleep(230); // 500 = 1seg
         printf(".");
     }
-
-    imposto == 1;
-
-    novosalario == 2;
-
-    classificacao == 3;
 
         printf("\n\nDigite a opção desejada:\n 1 - IMPOSTO\n 2 - Novo Salário\n 3 - Classificação\n ");
         scanf("%c",&opcao);
@@ -39,14 +34,18 @@ int main()
         break;
 
         case'3': printf(" \nOpção desejada Classificação\n ");
+        break;
+
+        default : printf ("\nValor invalido!\n");
+        break;
 
     }
 
     if (opcao=='1') 
     {
-        printf("\nSalário          |  Percentual de Imposto \n Menor de 500,00   |            5%%\n De 500,00 a 850,00|            10%%\n Acima de 850      |            15%%\n");
+        printf("\nSalário            |  Percentual de Imposto \n Menor de 500,00   |            5%%\n De 500,00 a 850,00|            10%%\n Acima de 850      |            15%%\n");
 
-            printf("Digite o valor do seu salário: ");
+            printf("\n\nDigite o valor do seu salário: ");
             scanf("%f", &salario);
 
             if (salario<500)
@@ -79,7 +78,7 @@ int main()
     {
         printf("Salário                    |   Aumento\n Maior que 1500              |    25,00\n De 750,00 a 1500,00         |    50,00\n De 450,00 a 750,00          |    75,00\n Menor que 450,00            |    100,00   ");
 
-            printf("\nDigite o valor do seu salário:\n ");
+            printf("\n\nDigite o valor do seu salário:  ");
             scanf("%f", &salario);
 
             if (salario>1500)
