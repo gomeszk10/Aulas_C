@@ -13,7 +13,7 @@ main()
 
     puts("\n \"Hello World\"");
 
-    puts("\n\n \"Hello World\"");// puts pula a linha automático
+    puts("\n\n \"Hello World\"");// puts pula a linha automï¿½tico
 
 
 }
